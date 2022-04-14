@@ -5,6 +5,24 @@ Created on Wed Apr 13 20:57:44 2022
 @author: lfsto
 """
 
+
+#----#----#----#----#----#----#----#----#----#----#----#----#
+#----#
+#----# Exectute this file, 
+#----# Then run run_model() with parameters for 
+#----#   the spatial resolution, the time steps, and frequency cutoff.
+#----# Then run gif(), no parameters
+#----#
+#----# Note that gif() will save files to your computer! 
+#----# GIF() WILL SAVE FILES TO YOUR COMPUTER!!!!!
+#----# GIF() WILL SAVE HUNDREDS OF FILES TO YOUR COMPUTER!!!!!!
+#----# It will save hundreds of files, 
+#----# then delete them all (assuming it fully executes), then save 
+#----# one final .gif
+#----#
+#----#----#----#----#----#----#----#----#----#----#----#----#
+
+
 #%matplotlib nbagg
 
 import numpy as np
@@ -152,7 +170,7 @@ plt.show()
 
 def gif():    #(x_vals, y_vals):
     filenames = []
-    save_as = f"REU_Data_{time.strftime('%Y-%m-%d-%H.%M.%S')}.gif"
+    save_as = f"C:\\Users\\lfsto\\.spyder-py3\\Gifs\\REU_Data_{time.strftime('%Y-%m-%d-%H.%M.%S')}.gif"
     
     fig, ax = plt.subplots(1, 1)
     
